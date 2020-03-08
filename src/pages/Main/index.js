@@ -1,18 +1,19 @@
 import React from 'react';
-import {View, Button} from 'react-native';
+import {Button} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
+import {Container} from './styles';
 
 export default function Main() {
   const navigation = useNavigation();
 
   return (
-    <View>
+    <Container>
       <Button
         title="User"
         onPress={() => {
           navigation.navigate('User');
         }}
       />
-    </View>
+    </Container>
   );
 }
